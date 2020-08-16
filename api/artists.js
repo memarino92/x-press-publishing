@@ -26,7 +26,7 @@ artistsRouter.get('/', (req, res, next) => {
         } else {
             res.send({artists: rows});
         }
-    })
+    });
 });
 
 artistsRouter.get('/:artistId', (req, res, next) => {
